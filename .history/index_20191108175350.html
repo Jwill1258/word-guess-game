@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Race to History: Civil Wrights</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- create menu bar (Civil Rights, TBD, TBD, TBD, etc..), logo (opens setting, aditional needs coming soon ), and random button (random topic)  -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Race to History || </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Merch</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Let the games begin!
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Let the games begin!</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+    </nav>
+    
+    
+    <!-- create code for generating a random question and answer(array with a total of 30 questions) -->
+    <div class="container">
+
+        <!--Changing Image based on correct answers-->
+        <h2>Press Any Key To Guess This Word!</h2>
+    
+
+        <!--Current Word Container-->
+        <div>
+            <h3 id="currentword">_ _ _ _ _</h3>
+        </div>
+        <div id="scoreboard">
+            <!--Guesses left Container-->
+            <div class="sidebar">
+                <h3>GUESSES LEFT:
+                    <span id="guessesremaining"></span>
+                </h3>
+            </div>
+
+            <!--Wins counter Container-->
+            <div class="sidebar">
+                <h3>WINS:
+                    <span id="winstracker"></span>
+                </h3>
+            </div>
+            <!--Loss counter Container-->
+            <div class="sidebar">
+                <h3>LOSSES:
+                    <span id="losstracker"></span>
+                </h3>
+            </div>
+
+            <!--Wrong guesses container-->
+            <div class="sidebar">
+                <h3>LETTERS YOU GUESSED WRONG:
+                    <span id="playerguesses"></span>
+                </h3>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="footer">
+            <div class="footer-content"></div>
+    
+            <div class="footer-bottom"></div>
+                <p>Copyright&copy; || Jeff Williams 2019</p>
+        
+    </div>
+
+
+
+
+    <script src="assets/javascript/game.js"></script>
+
+
+
+    
+</body>
+</html>

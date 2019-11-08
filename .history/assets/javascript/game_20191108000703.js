@@ -101,6 +101,7 @@ function complete() {
     } else if (guessesRemaining === 0) {
         losses++;
         reset()
+        document.getElementById("image").src = "./assets/images/try-again.png"
         document.getElementById("losstracker").innerHTML = " " + losses;
     }
     //display losses on screen && guesses remaining countdown

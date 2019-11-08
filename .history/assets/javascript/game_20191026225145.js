@@ -86,7 +86,7 @@ function checkLetters(letter) {
 
 //Game Play Variable
 
-//check to see if player has won
+//check to see if player won...
 function complete() {
     console.log("wins:" + wins + "| losses:" + losses + "| guesses left:" + guessesRemaining)
 
@@ -101,6 +101,7 @@ function complete() {
     } else if (guessesRemaining === 0) {
         losses++;
         reset()
+        document.getElementById("image").src = "./assets/images/try-again.png"
         document.getElementById("losstracker").innerHTML = " " + losses;
     }
     //display losses on screen && guesses remaining countdown
